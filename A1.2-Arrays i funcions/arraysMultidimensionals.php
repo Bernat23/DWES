@@ -24,7 +24,7 @@ function crearMatriu(int $mida):array {
 /*
 *Rep una matriu i la representa amb el format de taula de HTML
 */
-function mostraMatriu(array $matriu){
+function mostraMatriu(array $matriu):void{
     echo ("<table>");
     for($i = 0; $i < count($matriu); $i++){
         echo "<tr> ";
