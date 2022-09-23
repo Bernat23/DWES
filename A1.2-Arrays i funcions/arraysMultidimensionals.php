@@ -5,7 +5,7 @@
 *amb una diagonal de * i el triangle inferior omplert amb aleatoris,
 *la superior amb la suma de columna i fila i retorna la matriu
 */
-function crearMatriu(int $mida) {
+function crearMatriu(int $mida):array {
     $matriu= [[]];
     for($i = 0; $i < $mida; $i++){
         for($j = 0; $j < $mida; $j++){
@@ -24,7 +24,7 @@ function crearMatriu(int $mida) {
 /*
 *Rep una matriu i la representa amb el format de taula de HTML
 */
-function mostraMatriu($matriu){
+function mostraMatriu(array $matriu){
     echo ("<table>");
     for($i = 0; $i < count($matriu); $i++){
         echo "<tr> ";
@@ -39,7 +39,7 @@ function mostraMatriu($matriu){
 /*
 *Rep una matriu i torna la matriu trasposada
 */
-function transposaMatriu($matriu){
+function transposaMatriu(array $matriu):array{
     $matriuTrasposada= [[]];
     for($i = 0; $i < count($matriu[0]); $i++){
         for($j = 0; $j < count($matriu); $j++){

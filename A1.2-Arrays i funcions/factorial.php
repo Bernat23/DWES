@@ -4,7 +4,7 @@
 *de calcular el seu factorial
 * Retorna un enter
 */
-function factorial($numero):int {
+function factorial(int $numero):int {
     if($numero < 2){
         return 1;
     } else {
@@ -30,6 +30,6 @@ function factorialArray(array $numeros) :bool|array {
     return $resultat;
 }
 
-$numeros = array(6, 5,10, 0,9,5,4,6);
+$numeros = array(6, 5, 0,9,5,4,6);
 print_r(factorialArray($numeros));
 ?>
